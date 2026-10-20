@@ -8,7 +8,7 @@ function Navbar() {
           <span className="text-[#B89A55]">Café</span> Dev
         </Link>
 
-        <div className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-gray-100">
+        <div className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-gray-100 sm:gap-x-5">
           <Link to="/" className="transition hover:text-[#D5B96D]">
             Início
           </Link>
