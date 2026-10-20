@@ -23,7 +23,7 @@ function ProductCard({ nome, descricao, preco, imagem }) {
 
         <button
           type="button"
-          className="mt-4 w-full rounded-lg bg-[#B89A55] px-4 py-2 font-medium text-white transition hover:bg-[#9E8141]"
+          className="mt-4 w-full rounded-lg bg-[#B89A55] px-4 py-2 font-medium text-white transition hover:bg-[#9E8141] focus:outline-none focus:ring-2 focus:ring-[#B89A55] focus:ring-offset-2"
         >
           Conhecer
         </button>
