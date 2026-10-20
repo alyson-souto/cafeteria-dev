@@ -38,7 +38,7 @@ function Home() {
         <img
           src="/images/banner-cafeteria.jpg"
           alt="Apresentação da cafeteria"
-          className="h-[600px] w-full rounded-xl object-cover shadow-sm"
+          className="h-[800px] w-full rounded-xl object-cover shadow-sm sm:h-[480px] lg:h-[600px]"
         />
       </section>
 
