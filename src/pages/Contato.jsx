@@ -1,3 +1,4 @@
+
 import { useState } from "react"
 
 function Contato() {
@@ -9,6 +10,13 @@ function Contato() {
   function enviarFormulario(event) {
     event.preventDefault()
     setEnviado(true)
+  }
+
+  function fecharModal() {
+    setEnviado(false)
+    setNome("")
+    setEmail("")
+    setMensagem("")
   }
 
   return (
@@ -23,7 +31,7 @@ function Contato() {
         </h1>
 
         <p className="mt-3 leading-7 text-gray-600">
-          Dúvidas, sugestões ou apenas vontade de conversar?
+          Dúvidas, sugestões ou vontade de conversar?
           Envie uma mensagem para nossa cafeteria.
         </p>
 
@@ -89,18 +97,49 @@ function Contato() {
 
           <button
             type="submit"
-            className="w-full rounded-lg bg-[#B89A55] px-6 py-3 font-medium text-white transition hover:bg-[#9E8141]"
+            className="w-full rounded-lg bg-[#B89A55] px-6 py-3 font-medium text-white transition hover:bg-[#9E8141] focus:outline-none focus:ring-2 focus:ring-[#B89A55] focus:ring-offset-2"
           >
             Enviar mensagem
           </button>
         </form>
-
-        {enviado && (
-          <p className="mt-5 rounded-lg bg-gray-100 p-4 text-gray-800">
-            Obrigado, {nome}! Sua mensagem foi registrada.
-          </p>
-        )}
       </section>
+
+      {enviado && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4"
+          role="presentation"
+        >
+          <section
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="titulo-modal"
+            className="w-full max-w-md rounded-xl bg-white p-6 text-center shadow-xl sm:p-8"
+          >
+            <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-[#B89A55]/15 text-3xl text-[#9E8141]">
+              ✓
+            </div>
+
+            <h2
+              id="titulo-modal"
+              className="mt-4 text-2xl font-bold text-gray-900"
+            >
+              Obrigado, {nome}!
+            </h2>
+
+            <p className="mt-3 leading-6 text-gray-600">
+              Sua mensagem foi registrada nesta demonstração.
+            </p>
+
+            <button
+              type="button"
+              onClick={fecharModal}
+              className="mt-6 w-full rounded-lg bg-[#B89A55] px-6 py-3 font-medium text-white transition hover:bg-[#9E8141] focus:outline-none focus:ring-2 focus:ring-[#B89A55] focus:ring-offset-2"
+            >
+              Entendi
+            </button>
+          </section>
+        </div>
+      )}
     </main>
   )
 }
