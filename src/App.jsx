@@ -11,16 +11,20 @@ import Contato from "./pages/Contato"
 function App() {
   return (
     <Router>
-      <Navbar />
+      <div className="flex min-h-screen flex-col bg-gray-50 text-gray-900">
+        <Navbar />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/produtos" element={<Produtos />} />
-        <Route path="/sobre" element={<Sobre />} />
-        <Route path="/contato" element={<Contato />} />
-      </Routes>
+        <div className="flex-1">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/produtos" element={<Produtos />} />
+            <Route path="/sobre" element={<Sobre />} />
+            <Route path="/contato" element={<Contato />} />
+          </Routes>
+        </div>
 
-      <Footer />
+        <Footer />
+      </div>
     </Router>
   )
 }
