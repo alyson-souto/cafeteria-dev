@@ -61,10 +61,16 @@ const produtos = [
 
 function Produtos() {
   return (
-    <main>
-      <h1>Nosso cardápio</h1>
+    <main className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+      <p className="text-sm font-semibold uppercase tracking-widest text-[#A48742]">
+        Nosso cardápio
+      </p>
 
-      <div>
+      <h1 className="mb-8 mt-2 text-3xl font-bold text-gray-900">
+        Cafés e especiais
+      </h1>
+
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {produtos.map((produto) => (
           <ProductCard
             key={produto.id}
