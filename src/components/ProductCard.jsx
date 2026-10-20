@@ -1,9 +1,19 @@
 
-const ProductCard = () => {
+function ProductCard({ nome, descricao, preco, imagem }) {
   return (
-    <div>
-      
-    </div>
+    <article>
+      <img src={imagem} alt={nome} />
+
+      <div>
+        <h3>{nome}</h3>
+        <p>{descricao}</p>
+        <p>{preco}</p>
+
+        <button type="button">
+          Conhecer
+        </button>
+      </div>
+    </article>
   )
 }
 
