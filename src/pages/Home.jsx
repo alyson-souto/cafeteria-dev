@@ -33,21 +33,33 @@ const produtos = [
 
 function Home() {
   return (
-    <main>
+    <main className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
       <section>
         <img
           src="/images/banner-cafeteria.jpg"
           alt="Apresentação da cafeteria"
+          className="h-[600px] w-full rounded-xl object-cover shadow-sm"
         />
       </section>
 
-      <section>
-        <h1>Seu próximo café favorito</h1>
-        <p>Sabores especiais e momentos para desacelerar.</p>
+      <section className="py-10">
+        <p className="text-sm font-semibold uppercase tracking-widest text-[#A48742]">
+          Feito para sua pausa
+        </p>
 
-        <h2>Destaques do cardápio</h2>
+        <h1 className="mt-2 text-3xl font-bold text-gray-900">
+          Seu próximo café favorito
+        </h1>
 
-        <div>
+        <p className="mt-3 max-w-2xl text-gray-600">
+          Sabores especiais e momentos para desacelerar.
+        </p>
+
+        <h2 className="mb-6 mt-8 text-2xl font-bold text-gray-900">
+          Destaques do cardápio
+        </h2>
+
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {produtos.map((produto) => (
             <ProductCard
               key={produto.id}
