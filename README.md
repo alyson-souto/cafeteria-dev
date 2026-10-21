@@ -22,26 +22,83 @@ O Café Dev apresenta uma interface para divulgação de uma cafeteria e de seus
 
 A aplicação possui uma página inicial com banner de destaque, apresentação de produtos, catálogo e páginas institucionais.
 
-## Funcionalidades
+# 🛰️ Funcionalidades
 
-- **Home:** banner principal e produtos em destaque.
-- **Produtos:** apresentação do catálogo por meio de cartões reutilizáveis.
-- **Sobre:** apresentação da proposta da cafeteria.
-- **Contato:** formulário demonstrativo com nome, e-mail e mensagem, incluindo confirmação visual após o envio.
-- **Navbar:** navegação entre as páginas.
-- **Footer:** informações complementares e navegação no rodapé.
-- **Responsividade:** adaptação do layout para diferentes tamanhos de tela.
+- [☑️] Página inicial com banner de destaque.
+- [☑️] Apresentação de produtos em destaque.
+- [☑️] Catálogo de produtos organizado em cartões.
+- [☑️] Página institucional sobre a cafeteria.
+- [☑️] Página de contato com formulário demonstrativo.
+- [☑️] Navegação entre páginas com React Router DOM.
+- [☑️] Componentes reutilizáveis para cabeçalho, rodapé e produtos.
+- [☑️] Identidade visual com detalhes discretos em dourado.
+- [☑️] Layout adaptável a diferentes tamanhos de tela.
 
-> Observação: o formulário de contato é demonstrativo e não realiza envio real de e-mails.
+> **Nota:** o formulário de contato é demonstrativo. A confirmação visual do envio não representa o envio real de um e-mail.
 
-## Tecnologias utilizadas
+---
 
-- **React:** criação da interface por meio de componentes reutilizáveis.
-- **Vite:** ambiente de desenvolvimento e ferramenta de build.
-- **Tailwind CSS:** estilização e construção do layout responsivo.
-- **React Router DOM:** navegação entre as páginas, caso esteja instalado e configurado.
-- **JavaScript (JSX):** estrutura e lógica dos componentes.
-- **Git e GitHub:** versionamento, organização de branches e revisão por Pull Requests.
+# 📂 Estrutura do projeto
+
+```text
+cafeteria-dev/
+│
+├── public/
+│   └── images/
+│       ├── banner-cafeteria.jpg
+│       ├── cafe-1.jpg
+│       ├── cafe-2.jpg
+│       ├── ...
+│       ├── pagina-inicial.jpg
+│       └── pagina-produtos.jpg
+│
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── Footer.jsx
+│   │   └── ProductCard.jsx
+│   │
+│   ├── pages/
+│   │   ├── Home.jsx
+│   │   ├── Produtos.jsx
+│   │   ├── Sobre.jsx
+│   │   └── Contato.jsx
+│   │
+│   ├── css/
+│   │   └── estilo.css
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── index.html
+├── package.json
+├── vite.config.js
+├── integrantes.txt
+└── README.md
+```
+
+
+# 🚀 Tecnologias utilizadas
+
+<p align="center">
+  <img
+    src="https://skillicons.dev/icons?i=react,vite,tailwind,js,html,css,git,github,vscode"
+    alt="Tecnologias utilizadas no projeto"
+  />
+</p>
+
+| Tecnologia | Aplicação no projeto |
+|---|---|
+| React | Construção da interface e dos componentes. |
+| Vite | Ambiente de desenvolvimento e geração do build. |
+| Tailwind CSS | Estilização e organização do layout responsivo. |
+| JavaScript | Lógica e interatividade da aplicação. |
+| JSX | Composição das interfaces React. |
+| React Router DOM | Navegação entre as páginas. |
+| Git e GitHub | Versionamento e colaboração no projeto. |
+
+---
 
 ## Bibliotecas e imports
 
@@ -79,6 +136,8 @@ Permite reutilizar o cartão de produto em diferentes páginas.
 - `src/index.css`: estilos globais e configuração de CSS do projeto.
 - `integrantes.txt`: identificação dos integrantes e link do repositório.
 
+---
+
 ## Como executar o projeto
 
 ### Pré-requisitos
@@ -91,13 +150,13 @@ Permite reutilizar o cartão de produto em diferentes páginas.
 Clone o repositório:
 
 ```bash
-git clone URL_DO_REPOSITORIO
+git clone https://github.com/alyson-souto/cafeteria-dev.git
 ```
 
 Acesse a pasta:
 
 ```bash
-cd NOME_DO_REPOSITORIO
+cd cafeteria-dev
 ```
 
 Instale as dependências:
@@ -122,22 +181,63 @@ npm run dev
 
 O terminal apresentará o endereço local para acessar a aplicação no navegador.
 
+---
+
 ## Identidade visual
 
 A interface utiliza uma composição visual clara, com fundo em tons suaves, textos escuros, cartões brancos e detalhes dourados discretos.
 
 O objetivo é apresentar os produtos de forma organizada, mantendo uma experiência visual consistente entre as páginas.
 
-## Versionamento e colaboração
+---
 
-O desenvolvimento foi organizado em branches e commits, separando a estrutura inicial, a estilização e os refinamentos das funcionalidades.
+# 🔀 Versionamento e colaboração
 
-As features foram encaminhadas para revisão por Pull Requests, com integração na branch de desenvolvimento antes da publicação da versão final.
+O projeto utiliza Git e GitHub para organizar o desenvolvimento e acompanhar as alterações realizadas.
 
-## Integrantes 💻 
+O fluxo de trabalho contempla:
 
-`Alyson Souto`
+1. Organização das tarefas e funcionalidades.
+2. Desenvolvimento em branches específicas.
+3. Registro das alterações por meio de commits.
+4. Revisão e integração das alterações via Pull Requests.
+5. Preparação da versão final para publicação.
 
-## Deploy  🌐
-Acesso ao projeto: https://alyson-souto.github.io/cafeteria-dev/
+Essa organização ajuda a manter o histórico do projeto e facilita o desenvolvimento colaborativo.
 
+
+
+# 👨‍💻 Autor
+
+<div align="center">
+
+### Alyson Souto
+
+Estudante de Engenharia de Software — FIAP
+
+[![GitHub](https://img.shields.io/badge/GitHub-alyson--souto-181717?style=for-the-badge&logo=github)](https://github.com/alyson-souto)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Alyson_Souto-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/alyson-souto-739039314/)
+
+</div>
+
+# 🌐 Acesse o projeto
+
+<p align="center">
+
+<a href="https://cafeteria-dev-pi.vercel.app/">
+  <img
+    src="https://img.shields.io/badge/CAFÉ_DEV-Visitar_site-C9A66B?style=for-the-badge&logo=googlechrome&logoColor=white"
+    alt="Visitar o Café Dev"
+  />
+</a>
+
+</p>
+
+<div align="center">
+
+### Acesso ao projeto: https://cafeteria-dev-pi.vercel.app/
+
+---
+### ⭐ Obrigado pela visita!
+
+</div>
